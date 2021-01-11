@@ -1,10 +1,10 @@
 const fs = require('fs');
-const {Webhook_ID, Webhook_Token} = require('./config.json')
+const {Webhook_ID, Webhook_Token, Banlist_Path} = require('./config.json')
 const { WebhookClient, MessageEmbed } = require('discord.js');
 const web = new WebhookClient(Webhook_ID,Webhook_Token)
 
 var options = {
-    logFile: './miscmod_bans.dat',
+    logFile: Banlist_Path,
     endOfLineChar: require('os').EOL
   };
   // Obtain the initial size of the log file before we begin watching it.

@@ -1,4 +1,5 @@
 {
     "Webhook_ID": "",
-    "Webhook_Token": ""
+    "Webhook_Token": "",
+    "Banlist_Path" : ""
 }
